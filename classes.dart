@@ -11,7 +11,8 @@ class Car {
 }
 
 void main() {
-  Car myCar = Car();
+  //new  é opcional
+  Car myCar = new Car();
 
   print(myCar.name);
   print(myCar.year);
