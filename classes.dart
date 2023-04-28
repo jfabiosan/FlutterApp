@@ -1,20 +1,18 @@
+void main() {
+  Car mycar = Car('BMW', 2013, 580);
+  print(mycar.name);
+  print(mycar.year);
+  print(mycar.weight);
+}
+
 class Car {
   late String name;
   late int year;
   late double weight;
 
-  Car() {
-    this.name = "BMW";
-    this.year = 2023;
-    this.weight = 980;
+  Car(String name, int year, double weight) {
+    this.name = name;
+    this.year = year;
+    this.weight = weight;
   }
-}
-
-void main() {
-  //new  é opcional
-  Car myCar = new Car();
-
-  print(myCar.name);
-  print(myCar.year);
-  print(myCar.weight);
 }
