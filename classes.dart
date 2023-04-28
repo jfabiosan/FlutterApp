@@ -3,6 +3,7 @@ void main() {
   print(mycar.name);
   print(mycar.year);
   print(mycar.weight);
+  mycar.descriptions();
 }
 
 //Criando uma classe
@@ -26,5 +27,10 @@ class Car {
   //Car({required this.name, required this.year, required this.weight});
 
   //Construtor com valor default
-  Car([this.name = 'Maria', this.year = 2000, this.weight = 100]);
+  Car([this.name = 'Maria', this.year = 2000, this.weight = 998]);
+
+  void descriptions() {
+    print(
+        "Essa $name foi fabricada no ano de $year e tem o pesso de $weight} kg");
+  }
 }
