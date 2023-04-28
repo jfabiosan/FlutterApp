@@ -5,11 +5,13 @@ void main() {
   print(mycar.weight);
 }
 
+//Criando uma classe
 class Car {
+  //Atributos
   late String name;
   late int year;
   late double weight;
-
+  //Construtor
   Car(String name, int year, double weight) {
     this.name = name;
     this.year = year;
