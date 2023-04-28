@@ -1,5 +1,5 @@
 void main() {
-  Car mycar = Car(weight: 580, name: 'BMW', year: 2013);
+  Car mycar = Car('FERRARI', 2025);
   print(mycar.name);
   print(mycar.year);
   print(mycar.weight);
@@ -23,5 +23,8 @@ class Car {
   //Car(this.name, this.year, this.weight);
 
   //Construtor nominal
-  Car({required this.name, required this.year, required this.weight});
+  //Car({required this.name, required this.year, required this.weight});
+
+  //Construtor com valor default
+  Car([this.name = 'Maria', this.year = 2000, this.weight = 100]);
 }
