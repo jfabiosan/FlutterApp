@@ -11,10 +11,13 @@ class Car {
   late String name;
   late int year;
   late double weight;
-  //Construtor
-  Car(String name, int year, double weight) {
+
+  //Construtor 1
+  /*Car(String name, int year, double weight) {
     this.name = name;
     this.year = year;
     this.weight = weight;
-  }
+  }*/
+  //Construtor 2
+  Car(this.name, this.year, this.weight);
 }
