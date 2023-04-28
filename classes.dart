@@ -1,5 +1,5 @@
 void main() {
-  Car mycar = Car('BMW', 2013, 580);
+  Car mycar = Car(weight: 580, name: 'BMW', year: 2013);
   print(mycar.name);
   print(mycar.year);
   print(mycar.weight);
@@ -12,12 +12,16 @@ class Car {
   late int year;
   late double weight;
 
-  //Construtor 1
+  //Construtor posicional 1
   /*Car(String name, int year, double weight) {
     this.name = name;
     this.year = year;
     this.weight = weight;
   }*/
-  //Construtor 2
-  Car(this.name, this.year, this.weight);
+
+  //Construtor posicional2
+  //Car(this.name, this.year, this.weight);
+
+  //Construtor nominal
+  Car({required this.name, required this.year, required this.weight});
 }
