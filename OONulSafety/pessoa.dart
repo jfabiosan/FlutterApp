@@ -1,8 +1,8 @@
 //criando a classe Pessoa
 class Pessoa {
   //criando os atributos
-  late String nome;
-  late String sobrenome;
+  String nome;
+  String sobrenome;
   //criando o construtor
   Pessoa({required this.nome, required this.sobrenome});
 }
