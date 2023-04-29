@@ -1,5 +1,9 @@
 void main() {
-  Car mycar = Car('FERRARI', 2025, 1000);
+  Car mycar = Car(
+    'FERRARI',
+    2025,
+    1000,
+  );
   print(mycar.name);
   print(mycar.year);
   print(mycar.weight);
