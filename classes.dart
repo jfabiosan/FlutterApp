@@ -35,6 +35,6 @@ class Car {
 
   void descriptions() {
     print(
-        "Essa $name foi fabricada no ano de $year e tem o pesso de $weight} kg");
+        "Essa $name foi fabricada no ano de $year e tem o pesso de $weight kg");
   }
 }
