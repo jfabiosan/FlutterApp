@@ -25,13 +25,13 @@ class Car {
   }*/
 
   //Construtor posicional2
-  //Car(this.name, this.year, this.weight);
+  Car(this.name, this.year, this.weight);
 
   //Construtor nominal
   //Car({required this.name, required this.year, required this.weight});
 
   //Construtor com valor default
-  Car([this.name = 'Maria', this.year = 2000, this.weight = 998]);
+  //Car([this.name = 'Maria', this.year = 2000, this.weight = 998]);
   void getvalue() {
     _descriptions();
   }
