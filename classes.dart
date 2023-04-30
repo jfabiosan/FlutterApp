@@ -13,9 +13,9 @@ void main() {
 //Criando uma classe
 class Car {
   //Atributos
-  String name;
-  int year;
-  double weight;
+  late String name;
+  late int year;
+  late double weight;
 
   //Construtor posicional 1
   /*Car(String name, int year, double weight) {
