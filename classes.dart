@@ -4,10 +4,18 @@ void main() {
     2025,
     1000,
   );
+  Truck mytruck = Truck(
+    'Mercedes F1000',
+    2012,
+    2000,
+    4,
+  );
   print(mycar.name);
   print(mycar.year);
   print(mycar.weight);
+  print(mytruck.axless);
   mycar.getvalue();
+  mytruck.getvalue();
 }
 
 //Criando uma classe
@@ -40,4 +48,12 @@ class Car {
     print(
         "Essa $name foi fabricada no ano de $year e tem o pesso de $weight kg");
   }
+}
+
+//heranca de classe com extends
+class Truck extends Car {
+  late int axless;
+
+  Truck(String name, int year, double weight, this.axless)
+      : super(name, year, weight);
 }
