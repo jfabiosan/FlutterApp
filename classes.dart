@@ -52,8 +52,13 @@ class Car {
 
 //heranca de classe com extends
 class Truck extends Car {
-  late int axless;
+  int axless;
 
   Truck(String name, int year, double weight, this.axless)
       : super(name, year, weight);
+
+  void _descriptions() {
+    print(
+        "Essa $name foi fabricada no ano de $year e tem o pesso de $weight kg e $axless eixos");
+  }
 }
