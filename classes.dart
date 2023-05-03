@@ -54,8 +54,8 @@ class Car {
 class Truck extends Car {
   int axless;
 
-  Truck(String name, int year, double weight, this.axless)
-      : super(name, year, weight);
+  Truck(super.name, super.year, super.weight, this.axless);
+  //: super(name, year, weight);
 
   @override
   void _descriptions() {
