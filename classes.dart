@@ -57,6 +57,7 @@ class Truck extends Car {
   Truck(String name, int year, double weight, this.axless)
       : super(name, year, weight);
 
+  @override
   void _descriptions() {
     print(
         "Essa $name foi fabricada no ano de $year e tem o pesso de $weight kg e $axless eixos");
